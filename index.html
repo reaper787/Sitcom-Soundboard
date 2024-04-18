@@ -37,6 +37,7 @@
     <button class="sound-btn" id="laugh-btn">Laugh Track Sinefeld <i class="fa-regular fa-face-grin-squint-tears"></i></button>
     <button class="sound-btn" id="applause-btn">Normal Laugh Track <i class="fa-regular fa-face-laugh-squint"></i></button>
     <button class="sound-btn" id="aww-btn">Ooooh <i class="fa-regular fa-face-surprise"></i></button>
+    <button class="sound-btn" id="ohhhh-btn">Ooohhhh dang 😱 </button>
   </div>
 
   <audio id="laugh-audio" src="Audio/sitcom-crowd-laughing-seinfield.mp3"></audio>
@@ -49,12 +50,16 @@
     document.getElementById('laugh-btn').addEventListener('click', playLaugh);
 document.getElementById('applause-btn').addEventListener('click', playApplause);
 document.getElementById('aww-btn').addEventListener('click', playAww);
+    document.getElementById('ohhhh-btn').addEventListener('click', playOhhhh);
 
 function playLaugh() {
   var audio = document.getElementById('laugh-audio');
   audio.play();
 }
-
+function  playOhhhh(){
+  var audio = document.getElementById('ohhhh-audio');
+  audio.play()
+}
 function playApplause() {
   var audio = document.getElementById('applause-audio');
   audio.play();
