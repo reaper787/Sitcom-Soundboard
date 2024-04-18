@@ -36,20 +36,17 @@
   <div class="container">
     <button class="sound-btn" id="laugh-btn">Laugh Track Sinefeld <i class="fa-regular fa-face-grin-squint-tears"></i></button>
     <button class="sound-btn" id="applause-btn">Normal Laugh Track <i class="fa-regular fa-face-laugh-squint"></i></button>
-    <button class="sound-btn" id="aww-btn">Ooooh <i class="fa-regular fa-face-surprise"></i></button>
     <button class="sound-btn" id="ohhhh-btn">Ooohhhh dang 😱 </button>
   </div>
 
   <audio id="laugh-audio" src="Audio/sitcom-crowd-laughing-seinfield.mp3"></audio>
   <audio id="applause-audio" src="Audio/sitcom-laughing-1.mp3"></audio>
-  <audio id="aww-audio" src="Audio/sitcom-ooh.mp3"></audio>
   <audio id="ohhhh-audio" src="Audio/OHHHH MEME!.mp3"></audio>
 
   <script src="script.js"></script>
   <script>
     document.getElementById('laugh-btn').addEventListener('click', playLaugh);
 document.getElementById('applause-btn').addEventListener('click', playApplause);
-document.getElementById('aww-btn').addEventListener('click', playAww);
     document.getElementById('ohhhh-btn').addEventListener('click', playOhhhh);
 
 function playLaugh() {
@@ -62,11 +59,6 @@ function  playOhhhh(){
 }
 function playApplause() {
   var audio = document.getElementById('applause-audio');
-  audio.play();
-}
-
-function playAww() {
-  var audio = document.getElementById('aww-audio');
   audio.play();
 }
 
